@@ -1,11 +1,15 @@
 # PhpStorm Laravel Code Style
 
-This is a code style based on PSR-2, as per Laravel's [Contribution Guide](http://laravel.com/docs/5.1/contributions#coding-style)
+This is a code style based on PSR-2, as per Laravel's [Contribution Guide](http://laravel.com/docs/5.4/contributions#coding-style)
 
-To use this coding style, drop the `Laravel.xml` file in the `/config/codestyles/` subfolder within your [configuration directory](https://www.jetbrains.com/phpstorm/help/project-and-ide-settings.html).
+## Installation
 
-This code style has been updated in line with Laravel 5.1, but the minor customisations used previously have been removed.
+**Configuration folder** : Drop the `Laravel.xml` file in the `/config/codestyles/` subfolder within your [configuration directory](https://www.jetbrains.com/phpstorm/help/project-and-ide-settings.html).
 
-Alternatively, you can use PhpStorm's built in Code Styles to set from the predefined PSR1/PSR2 style. This can be found in `Preferences > Editor > Code Style > PHP`.
+**IDE Settings** : Open your Settings (`Ctrl + Alt + S`) and go to `Editor > Code Style` section. Click on the `Scheme` wrench on the right and select `Import Scheme > Intellij IDEA code style XML`.
 
-![Predefined Style](img/predefined_styles.png)
+## Notes
+
+This code style has been updated in line with Laravel 5.4, and matches Laravel's code styles as best as possible with PhpStorm's available configuration.
+
+Be mindful of the PHPDoc layout, which dictates `@param` is followed by *two* spaces, the argument type, *two more* spaces, and finally the variable name, which I've not been able to replicate in PhpStorm.
